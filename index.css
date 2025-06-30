@@ -64,3 +64,21 @@ body {
 .login-container a:hover {
   text-decoration: underline;
 }
+
+/* Home Page */
+nav {
+  box-shadow: 1px 4px 50px 0 #000000a1 !important;
+}
+
+.burger-btn {
+  border: 1px solid grey;
+}
+
+.burger-btn:focus {
+  border: 1px solid white;
+  box-shadow: none;
+}
+
+.burger-btn span {
+  background-image: url("./resources/pictures/icons8-hamburger-50.png");
+}
