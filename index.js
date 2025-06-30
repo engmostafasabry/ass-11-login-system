@@ -4,11 +4,7 @@ const loginPasswordInput = document.querySelector("#login-password-input");
 const loginBtn = document.querySelector("#login-btn");
 const loginErrorText = document.querySelector("#login-error-text");
 
-// WARN: I am using fake accounts
-let accounts = [
-  { name: "Mostafa Mohamed", email: "mostafa@mostafa", password: "1234" },
-  { name: "Ahmed Omar", email: "ahmed@ahmed", password: "5678" },
-];
+let accounts = [];
 
 initializePage();
 
@@ -49,7 +45,6 @@ function login() {
     return;
   }
 
-  console.log("congrats, you are logged in");
   localStorage.setItem("loggedInName", account.name);
   window.open("home.html", "_self");
 }

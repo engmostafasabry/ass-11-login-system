@@ -5,11 +5,7 @@ const signupBtn = document.querySelector("#signup-btn");
 const signupNameInput = document.querySelector("#signup-name-input");
 const signupErrorText = document.querySelector("#signup-error-text");
 
-// WARN: I am using fake accounts
-let accounts = [
-  { name: "Mostafa Mohamed", email: "mostafa@mostafa", password: "1234" },
-  { name: "Ahmed Omar", email: "ahmed@ahmed", password: "5678" },
-];
+let accounts = [];
 
 initializePage();
 
