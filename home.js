@@ -2,7 +2,7 @@
 const logoutBtn = document.querySelector("#logout-btn");
 const greetingText = document.querySelector("#greeting-title");
 
-initializeWebsite();
+initializePage();
 
 logoutBtn.addEventListener("click", () => {
   localStorage.removeItem("loggedInName");
@@ -10,7 +10,7 @@ logoutBtn.addEventListener("click", () => {
 });
 
 // functions
-function initializeWebsite() {
+function initializePage() {
   if (localStorage.getItem("loggedInName") !== null) {
     const loggedInName = localStorage.getItem("loggedInName");
     greetingText.textContent = `Welcome ${loggedInName}`;

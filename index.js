@@ -24,7 +24,7 @@ function initializePage() {
   }
 
   if (localStorage.getItem("accounts") !== null) {
-    accounts = JSON.stringify(localStorage.getItem("accounts"));
+    accounts = JSON.parse(localStorage.getItem("accounts"));
   }
 }
 
