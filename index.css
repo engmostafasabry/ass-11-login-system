@@ -1,0 +1,66 @@
+:root {
+  --color-info: #17a2b8;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  background-color: #24353f;
+}
+
+.login-container {
+  box-shadow: -5px 6px 50px 0px #000000c9 !important;
+  max-width: 830px;
+}
+
+.login-container h1,
+.login-container button,
+.login-container button:focus {
+  color: var(--color-info);
+}
+
+.login-container input,
+.login-container input:focus,
+.login-container button:hover,
+.login-container button:active {
+  color: white !important;
+}
+
+.login-container h1 {
+  font-size: 2.5rem;
+}
+
+.login-container input::placeholder {
+  color: lightgrey;
+}
+.login-container input {
+  background-color: inherit;
+}
+
+.login-container input:focus {
+  box-shadow: none;
+  border-color: #80bdff;
+  background-color: inherit;
+}
+
+.login-container button {
+  border-color: var(--color-info);
+}
+
+.login-container button:hover,
+.login-container button:active {
+  background-color: var(--color-info) !important;
+}
+
+.login-container button:focus {
+  background-color: transparent;
+  box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+}
+
+.login-container a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
